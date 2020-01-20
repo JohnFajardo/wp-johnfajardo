@@ -13,7 +13,6 @@
             <h3 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
             <p class="metadata"><span ></span> 23 Sep 2019 -  <span class="icon-user"> </span>  John</p>
             <?php the_content(); ?>
-            <a class="read-more" href="#">Read More...</a>
         </article>
         
         <hr class ="separator" />

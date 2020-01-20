@@ -3,13 +3,25 @@
         <h1 class="title"><a href="<?php echo get_bloginfo('wpurl'); ?>">John Fajardo</a></h1>
         <p class="tagline">Full stack web developer</p>
         <nav>
-            <ul class="nav-list">
-                <li class="menu-link"><a href="#">Home</a></li>
-                <li class="menu-link"><a href="#">Resume</a></li>
-                <li class="menu-link"><a href="#">Projects</a></li>
-                <li class="menu-link"><a href="#">Contact</a></li>
-            </ul>
+            <!-- Walker -->
+            <?php
+                wp_nav_menu(array(
+                    'container' => false,
+                    'container_class' => false,
+                    'container_id' => false,
+                    'menu_class' => false,
+                    'menu_id' => false,
+                    'before' => '',
+                    'after' => '',
+                    'link_before' => '',
+                    'link_after' => '',
+                    'items_wrap' => '<ul class="nav-list">%3$s</ul>',
+                    'walker'  => new Walker_Sidebar_Menu()
+                ));
+            ?>
+            <!-- Walker -->
         </nav>
     </div><!--  End navigation -->
 
     
+                
