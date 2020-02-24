@@ -17,6 +17,7 @@
         
         <hr class ="separator" />
         <?php endwhile; ?>
+        <?php get_footer(); ?>
 
 
     </div><!--  End content -->

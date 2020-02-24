@@ -1,5 +1,5 @@
 /*
-Theme name: John Fajardo
+Theme name: wp-John Fajardo
 Text Domain: johnfajardo
 Description: Simple theme for my blog
 Author: John Fajardo
@@ -8,4 +8,267 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-*{padding:0;margin:0;box-sizing:border-box;font-family:lato;-webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility}.profile{width:100%;max-width:50px;height:auto;display:block;border:2px solid #fff;margin:0 auto;border-radius:50%}.nav-list{padding:0;justify-content:center;list-style-type:none}.nav-list .menu-link{display:inline;text-align:center;line-height:35px;margin-right:15px}.separator{margin-top:70px}h1{font-size:36px;font-family:roboto;color:#ccc}h2{font-size:32px;font-family:roboto;color:#ccc}h3{font-size:28px;font-family:roboto;color:#ccc}h4{font-size:24px;font-family:roboto;color:#ccc}h5{font-size:20px;font-family:roboto;color:#ccc}h6{font-size:16px;font-family:roboto;color:#ccc}a{color:#4fb1ba;text-decoration:none}a:hover{text-decoration:underline;color:#98d1d7}.tagline,.title{text-align:center}.title{font-size:28px;margin:10px 0}.title a{color:#ccc}.title a:hover{color:#fff}.tagline{display:none}@media all and (min-width:992px){.profile{max-width:150px}.nav-list .menu-link{display:block}.title a{padding-bottom:5px;border-bottom:1px solid #ccc;text-decoration:none}.title a:hover{border-bottom:1px solid #fff}.tagline{display:block;margin:5px}.navigation li a{line-height:45px;color:#ccc;padding-bottom:10px;border-bottom:1px solid #555;text-decoration:none;margin:0}.navigation li a:hover{text-decoration:none;border-bottom:1px solid #fff;color:#fff}}p{color:#ccc}.read-more{float:right;color:#fff;background-color:#4fb1ba;padding:10px 15px;border-radius:5px}.read-more:hover{color:#fff}.post-title{margin-top:16px}.latest-posts{margin-bottom:16px}.metadata,.post-title{margin-bottom:8px}body{background-color:#2d3539;margin:0}.container{width:100vw;display:grid;height:100vh}.navigation{background-color:#343a40;text-align:center;padding:16px}.content{padding:16px}@media all and (min-width:992px){.container{display:grid;grid-template-columns:repeat(12,1fr)}.navigation{grid-column:span 3;height:100vh;background:url(./images/wave.jpg) center;box-shadow:inset 0 0 450px #000;display:flex;flex-direction:column;justify-content:center}.content{grid-column:span 9;padding:64px;overflow:auto}}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .profile {
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    display: block;
+    border: 2px solid #fff;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  
+  @media all and (min-width: 992px) {
+    .profile {
+      max-width: 150px;
+    }
+  }
+  
+  .nav-list {
+    padding: 0;
+    justify-content: center;
+    list-style-type: none;
+  }
+  
+  .nav-list .menu-link {
+    display: inline;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 15px;
+  }
+  
+  @media all and (min-width: 992px) {
+    .nav-list .menu-link {
+      display: block;
+    }
+  }
+  
+  .separator {
+    margin-top: 70px;
+  }
+  
+  * {
+    font-family: lato;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  h3 {
+    font-size: 28px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  h4 {
+    font-size: 24px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  h5 {
+    font-size: 20px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  h6 {
+    font-size: 16px;
+    font-family: roboto;
+    color: #ccc;
+  }
+  
+  a {
+    color: #4fb1ba;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #98d1d7;
+  }
+  
+  .title, .tagline {
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  
+  .title a {
+    color: #ccc;
+  }
+  
+  .title a:hover {
+    color: white;
+  }
+  
+  @media all and (min-width: 992px) {
+    .title a {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
+      text-decoration: none;
+    }
+    .title a:hover {
+      border-bottom: 1px solid #fff;
+    }
+  }
+  
+  .tagline {
+    display: none;
+  }
+  
+  @media all and (min-width: 992px) {
+    .tagline {
+      display: block;
+      margin: 5px;
+    }
+  }
+  
+  p {
+    color: #ccc;
+  }
+  
+  .read-more {
+    float: right;
+    color: #fff;
+    background-color: #4fb1ba;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    color: #fff;
+  }
+  
+  .post-title {
+    margin-top: 16px;
+  }
+  
+  @media all and (min-width: 992px) {
+    .navigation li a {
+      line-height: 45px;
+      color: #ccc;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #555;
+      text-decoration: none;
+      margin: 0;
+    }
+    .navigation li a:hover {
+      text-decoration: none;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+    }
+  }
+  
+  .latest-posts {
+    margin-bottom: 16px;
+  }
+  
+  .post-title {
+    margin-bottom: 8px;
+  }
+  
+  .metadata {
+    margin-bottom: 8px;
+  }
+  
+  body {
+    background-color: #2d3539;
+    margin: 0;
+  }
+  
+  .container {
+    width: 100vw;
+    display: grid;
+    height: 100vh;
+  }
+  
+  @media all and (min-width: 992px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+  
+  .navigation {
+    background-color: #343a40;
+    text-align: center;
+    padding: 16px;
+  }
+  
+  @media all and (min-width: 992px) {
+    .navigation {
+      grid-column: span 3;
+      height: 100vh;
+      background: url("./images/wave.jpg") center;
+      box-shadow: inset 0px 0px 450px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  @media all and (min-width: 992px) {
+    .content {
+      overflow: auto;
+      grid-column: span 9;
+      padding: 64px;
+      overflow: auto;
+    }
+  }
+  
+  .pagination {
+    margin: 15px;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .pagination .prev-page {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .pagination .page {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px;
+  }
+  
+  .pagination .next-page {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .pagination .next-page a {
+    color: #4fb1ba;
+  }
+  
+  .pagination .active {
+    color: #fff;
+  }
+  

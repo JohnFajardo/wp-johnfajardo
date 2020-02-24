@@ -25,8 +25,6 @@ function custom_sidebar() {
 }
 add_action( 'widgets_init', 'custom_sidebar' );
 
-
-
 // navs
 register_nav_menus(
 	array('my_theme_sidebar_menu' => 'Sidebar Menu' )
