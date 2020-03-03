@@ -6,6 +6,8 @@
     <title><?php bloginfo( 'name' ); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Lato|Roboto:400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lib/prettify/skins/sunburst.css">
+    <script src="<?php echo get_stylesheet_directory_uri(); ?>/lib/prettify/prettify.js"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body onload="PR.prettyPrint()">

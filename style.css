@@ -283,3 +283,7 @@ body {
   caption-side: bottom;
   color: #ccc;
 }
+
+pre {
+  margin: 10px 0;
+}
