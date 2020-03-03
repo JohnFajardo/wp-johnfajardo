@@ -3,7 +3,7 @@
 <div class="container">
     <?php get_sidebar(); ?>
 
-    <div class="content">
+    <div class="content main-content">
 
     
         <?php

@@ -262,6 +262,10 @@ body {
   color: #fff;
 }
 
+.main-content {
+  padding: 50px 100px;
+}
+
 .wp-caption {
   width: 100%;
   display: table;
