@@ -211,7 +211,7 @@ body {
   .navigation {
     grid-column: span 3;
     height: 100vh;
-    background: url("../images/wave.jpg") center;
+    background: url("./images/wave.jpg") center;
     box-shadow: inset 0px 0px 450px black;
     display: flex;
     flex-direction: column;
@@ -264,11 +264,18 @@ body {
 
 .wp-caption {
   width: 100%;
-  display: inline-block;
+  display: table;
   text-align: center;
   margin: 30px 0 30px auto;
 }
 
 .wp-caption img {
   margin: 0 auto;
+  display: block;
+}
+
+.wp-caption figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  color: #ccc;
 }
