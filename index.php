@@ -11,7 +11,7 @@
 
         <article>
             <h3 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p class="metadata"><span ></span> 23 Sep 2019 -  <span class="icon-user"> </span>  John</p>
+            <p class="metadata"><span class="icon-calendar"></span> 23 Sep 2019 -  <span class="icon-user"> </span>  John</p>
             <?php the_content(); ?>
         </article>
         
