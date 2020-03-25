@@ -91,17 +91,20 @@ h1 {
   font-size: 36px;
   font-family: roboto;
   color: #ccc;
+  margin-bottom: 8px;
 }
 
 h2 {
   font-size: 32px;
   font-family: roboto;
   color: #ccc;
+  margin-bottom: 8px;
 }
 
 h3 {
   font-size: 28px;
   font-family: roboto;
+  margin-bottom: 8px;
   color: #ccc;
 }
 
@@ -109,18 +112,21 @@ h4 {
   font-size: 24px;
   font-family: roboto;
   color: #ccc;
+  margin-bottom: 8px;
 }
 
 h5 {
   font-size: 20px;
   font-family: roboto;
   color: #ccc;
+  margin-bottom: 8px;
 }
 
 h6 {
   font-size: 16px;
   font-family: roboto;
   color: #ccc;
+  margin-bottom: 8px;
 }
 
 a {
@@ -174,6 +180,7 @@ a:hover {
 
 p {
   color: #ccc;
+  margin-bottom: 1rem;
 }
 
 .read-more {
@@ -327,9 +334,15 @@ pre {
 
 .text-center {
   text-align: center;
+  margin-bottom: 16px;
 }
 
-hr {
+ul {
+  padding-left:40px;
+  margin-bottom:1rem;
+}
+
+hr.post {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #2d3539;
   margin: 1rem 0;
