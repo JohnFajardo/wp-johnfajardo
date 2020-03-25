@@ -75,6 +75,8 @@
 
 .separator {
   margin-top: 70px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #2d3539;
 }
 
 * {
@@ -327,7 +329,8 @@ pre {
   text-align: center;
 }
 
-hr.post {
-  border-top: 1px solid #555;
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #2d3539;
   margin: 1rem 0;
 }
