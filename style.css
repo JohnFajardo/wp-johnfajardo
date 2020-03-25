@@ -79,6 +79,7 @@
 
 * {
   font-family: lato;
+  color: #ccc;
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
   text-rendering: optimizeLegibility;
@@ -320,4 +321,13 @@ body {
 
 pre {
   margin: 10px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+hr.post {
+  border-top: 1px solid #555;
+  margin: 1rem 0;
 }
