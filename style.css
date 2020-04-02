@@ -75,7 +75,7 @@
 
 .separator {
   margin-top: 70px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #666;
   border-bottom: 1px solid #2d3539;
 }
 
@@ -156,7 +156,33 @@ a:hover {
   color: white;
 }
 
+@media all and (max-width: 992px) {
+  
+  .main-content {
+    width: 90vw;
+    padding: 10px 10px 10px 60px;
+  }
+
+  .content {
+    padding: 16px;
+  }
+
+  img {
+    max-width: 40vw;
+  }
+
+  .post p {
+    margin: 0 auto;
+    width: 90vw;
+  }
+}
+
 @media all and (min-width: 992px) {
+
+  .main-content {
+    padding: 50px 100px;
+  }
+
   .title a {
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
@@ -263,9 +289,6 @@ body {
   }
 }
 
-.content {
-  padding: 16px;
-}
 
 @media all and (min-width: 992px) {
   .content {
@@ -306,10 +329,6 @@ body {
   color: #fff;
 }
 
-.main-content {
-  padding: 50px 100px;
-}
-
 .wp-caption {
   width: 100%;
   display: table;
@@ -342,8 +361,9 @@ ul {
   margin-bottom:1rem;
 }
 
-hr.post {
-  border-top: 1px solid #ccc;
+
+.main-separator {
+  border-top: 1px solid #666;
   border-bottom: 1px solid #2d3539;
   margin: 1rem 0;
 }

@@ -5,7 +5,7 @@
 
     <div class="content">
         <h2 class="latest-posts">Latest posts</h2>
-        <hr />
+        <hr class="main-separator" />
 
         <?php while ( have_posts() ) : the_post(); ?>
 
