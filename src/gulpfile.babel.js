@@ -34,7 +34,8 @@ exports.minifycss = () => (
 
 gulp.task('serve', () => {
     browserSync.init({
-        proxy: "http://localhost/jf"
+        proxy: "http://localhost/jf",
+        notify: false
     });
 
     gulp.watch('./scss/**/*', gulp.series('sass'));
