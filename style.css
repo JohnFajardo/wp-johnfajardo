@@ -1,3 +1,112 @@
-body {
+* {
   box-sizing: border-box;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2d3539;
+}
+
+a {
+  text-decoration: none;
+  color: #4fb1ba;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #98d1d7;
+}
+
+hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+a img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+a img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navigation {
+  background-color: #343a40;
+  text-align: center;
+  padding: 16px;
+}
+
+.profile {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.title, .tagline {
+  text-align: center;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list li {
+  display: inline;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 15px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.post-content h3 {
+  margin-bottom: 8px;
+}
+
+.post-content p {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.post-content ul li {
+  margin-left: 16px;
 }
