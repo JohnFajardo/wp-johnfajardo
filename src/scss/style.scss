@@ -29,7 +29,8 @@ hr {
 
 .metadata {
     font-size: 0.8em;
-    color: darken(#ccc, 10%)
+    color: darken(#ccc, 10%);
+    margin: 8px 0;
 }
 
 article p:last-child:after {
@@ -45,11 +46,38 @@ article p:last-child:after {
     margin-top:16px;
     padding: 10px 15px;
     border-radius: 5px;
-  }
-  
-  .read-more:hover {
-    color: #fff;
-  }
+}
+
+///// HEADERS /////
+$base-font-size: 16px;
+$heading-scale: 3;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $base-font-size + $heading-scale * (6 - $i);
+        //font-family: roboto;
+    }
+}
+///////////////////
+
+.read-more:hover {
+color: #fff;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    li a, li .dots, li .current {
+        position: relative;
+        display: block;
+        padding: 0.4em 0.75em;
+        line-height: 1.75em;
+    }
+}
+
+
 
 ///// WORDPRESS NATIVE IMAGE ALIGN STYLES /////
 img.alignright {float:right; margin:0 0 1em 1em}

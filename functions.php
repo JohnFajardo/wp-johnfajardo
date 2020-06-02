@@ -50,14 +50,21 @@ class Walker_Sidebar_Menu extends Walker {
 // Pagination
 if ( ! function_exists( 'post_pagination' ) ) :
     function post_pagination() {
-      global $wp_query;
-      $pager = 999999999; // need an unlikely integer
-  
-         echo paginate_links( array(
-              'base' => str_replace( $pager, '%#%', esc_url( get_pagenum_link( $pager ) ) ),
-              'format' => '?paged=%#%',
-              'current' => max( 1, get_query_var('paged') ),
-              'total' => $wp_query->max_num_pages
-         ) );
+        global $wp_query;
+        $pager = 999999999; // need an unlikely integer
+        
+        $paginate_links = paginate_links( array(
+            'base' => str_replace( $pager, '%#%', esc_url( get_pagenum_link( $pager ) ) ),
+            'format' => '?paged=%#%',
+            'current' => max( 1, get_query_var('paged') ),
+            'prev_text' => __('<<'),
+            'next_text' => __('>>'),
+            'type' => 'list',
+            'total' => $wp_query->max_num_pages
+        ));
+        $paginate_links = str_replace( "<ul class='page-numbers'>", "<ul class='pagination'>", $paginate_links );
+        if ( $paginate_links ) {
+            echo $paginate_links;
+        }
     }
- endif;
+endif;
