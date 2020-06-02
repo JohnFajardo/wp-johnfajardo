@@ -1,3 +1,5 @@
+@import 'icon-fonts';
+
 ///// GLOBAL STYLES, THE SAME EVERYWHERE /////
 * {
     box-sizing: border-box;
@@ -24,6 +26,30 @@ hr {
     margin-top:16px;
     margin-bottom:16px;
 }
+
+.metadata {
+    font-size: 0.8em;
+    color: darken(#ccc, 10%)
+}
+
+article p:last-child:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.read-more {
+    float: right;
+    color: #fff;
+    background-color: #4fb1ba;
+    margin-top:16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .read-more:hover {
+    color: #fff;
+  }
 
 ///// WORDPRESS NATIVE IMAGE ALIGN STYLES /////
 img.alignright {float:right; margin:0 0 1em 1em}
