@@ -1,0 +1,52 @@
+wp-johnfajardo
+├── content-single.php
+├── fonts
+│   ├── icomoon.eot
+│   ├── icomoon.svg
+│   ├── icomoon.ttf
+│   └── icomoon.woff
+├── footer.php
+├── functions.php
+├── header.php
+├── images
+│   ├── profile.png
+│   └── wave.jpg
+├── index.php
+├── lib
+│   └── prettify
+│       ├── lang-css.js
+│       ├── lang-go.js
+│       ├── lang-lua.js
+│    [...]
+│       ├── lang-yaml.js
+│       ├── lang-yml.js
+│       ├── prettify.css
+│       ├── prettify.js
+│       ├── run_prettify.js
+│       └── skins
+│           ├── desert.css
+│           ├── doxy.css
+│           ├── sons-of-obsidian.css
+│           └── sunburst.css
+├── page.php
+├── screenshot.png
+├── sidebar.php
+├── single.php
+├── src
+│   ├── gulpfile.babel.js
+│   ├── images
+│   ├── package.json
+│   ├── package-lock.json
+│   └── scss
+│       ├── fonts
+│       │   ├── icomoon.eot
+│       │   ├── icomoon.svg
+│       │   ├── icomoon.ttf
+│       │   └── icomoon.woff
+│       ├── _icon-fonts.scss
+│       └── style.scss
+├── style.css
+├── style-old.css
+└── tree.txt
+
+9 directories, 92 files
